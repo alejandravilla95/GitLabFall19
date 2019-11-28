@@ -1,5 +1,4 @@
 //Contributors
-//Alejandra Villa
 //room #23
 //G. Poppe
 // Mir Hassan Talpur #17
@@ -9,7 +8,7 @@
 #include <time.h>
 #include <stdio.h>
 
-void main(void)
+int main(void)
 {
 	int x,y,z,i,h,g,k,choice=0;
 	char name[256];
@@ -192,7 +191,7 @@ void main(void)
 						char yellow[256]={"yellow"};
 					
 						puts("You open the door and find 3 pills. A man wearing all back asks you to take one. There is a red pill, a blue pill, and a yellow pill. Which one do you choose?");
-						scanf(" %s",&userOption);
+						scanf(" %s",userOption);
 						
 						if(strcmp(userOption,red) == 0)
 							puts("You chose the red pill!");
@@ -290,8 +289,30 @@ void main(void)
 			{
 					while(choice != 99)
 					{
-							puts("you open the door and find another door");
+							puts("you open the door and find another door, but before the door there is a circle of witches");
+							puts("they are sitting and staring since you interrupted their spell casting. you are kind of intrigued yet freaked out");
+							puts("their cat, Salem, walks and stumbles on your feet and that is a bad sign of bad luck");
+							puts("now you have the option to do the following...");
+							puts("1:join the coven...");
+							puts("2. walk away for the sake of your sanity");
+							puts("3. kick the cat away");
 							scanf("%d",&choice);
+							if(choice==1)
+							{
+								puts("you join the spell casting w/ the rest of the witches");
+								puts("you also live to join the mastery of manifesting and power of true self mastery with the best gang");
+								break;
+							}
+							if(choice==2)
+							{
+								puts("walk away and dont look back");
+								break;
+							}
+							if(choice==3)
+							{
+								puts("kick the cat away and be cursed forever");
+								break;
+							}
 					}
 					break;
 			}
